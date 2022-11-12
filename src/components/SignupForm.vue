@@ -32,7 +32,7 @@ label {
 input {
     display: block;
     padding: 10px 6px;
-    width: 10%;
+    width: 100%;
     box-sizing: border-box;
     border: none;
     border-bottom: 1px solid #ddd;
