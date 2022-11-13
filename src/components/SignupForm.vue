@@ -18,8 +18,18 @@
         </div>
 
         <div>
-            <input type="checkbox" v-model="names">
+            <input type="checkbox" value="shaun" v-model="names">
             <label>Shaun</label>
+        </div>
+
+        <div>
+            <input type="checkbox" value="yoshi" v-model="names">
+            <label>yoshi</label>
+        </div>
+
+        <div>
+            <input type="checkbox" value="mario" v-model="names">
+            <label>mario</label>
         </div>
 
     </form>
