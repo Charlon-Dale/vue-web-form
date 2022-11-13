@@ -14,6 +14,9 @@
 
         <label>Skills:</label>
         <input type="text" v-model="tempSkill" @keydown="addSkill">
+        <div v-for="skill in skills" :key="skill">
+        
+        </div>
 
         <div class="terms">
             <input type="checkbox" v-model="terms" required>
@@ -57,7 +60,10 @@ export default {
     },
     methods: {
         addSkill(e) {
-            console.log(e)
+            if (e.key === ',' && this.tempSkill) {
+                this.skill.push(this.tempSkill)
+                this.tempSkill = ''
+            }
 
         }
     }
