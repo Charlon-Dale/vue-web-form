@@ -38,6 +38,7 @@
     <p>Password: {{ password }}</p>
     <p>Role: {{ role }}</p>
     <p> Terms accepted: {{ terms }}</p>
+    <p> Names: {{ names }}</p>
 </template>
 
 <script>
@@ -47,8 +48,7 @@ export default {
             email: 'mario',
             password: '',
             role: 'designer',
-            terms: false,
-            names: []
+            terms: false
         }
     }
 }
