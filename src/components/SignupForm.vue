@@ -13,7 +13,7 @@
         </select>
 
         <div class="terms">
-            <input type="checkbox" required>
+            <input type="checkbox" v-model="terms" required>
             <label>Accept terms and conditions</label>
         </div>
 
@@ -22,6 +22,7 @@
     <p>Email: {{ email }}</p>
     <p>Password: {{ password }}</p>
     <p>Role: {{ role }}</p>
+    <p> Terms accepted: {{ terms }}</p>
 </template>
 
 <script>
@@ -30,7 +31,8 @@ export default {
         return {
             email: 'mario',
             password: '',
-            role: 'designer'
+            role: 'designer',
+            terms: false
         }
     }
 }
