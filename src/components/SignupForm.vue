@@ -14,15 +14,16 @@
     </form>
     <p>Email: {{ email }}</p>
     <p>Password: {{ password }}</p>
+    <p>Role: {{ role }}</p>
 </template>
 
 <script>
 export default {
     data() {
         return {
-            email: '',
+            email: 'mario',
             password: '',
-            role: ''
+            role: 'designer'
         }
     }
 }
