@@ -61,7 +61,9 @@ export default {
     methods: {
         addSkill(e) {
             if (e.key === ',' && this.tempSkill) {
-                this.skills.push(this.tempSkill)
+                if (!this.skills.includes(this.tempSkill)) {
+                    this.skills.push(this.tempSkill)
+                }
                 this.tempSkill = ''
             }
         }
