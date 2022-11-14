@@ -1,5 +1,5 @@
 <template>
-    <form>
+    <form @submit="handleSubmit">
         <label>Email:</label>
         <input type="email" required v-model="email">
     
@@ -75,6 +75,9 @@ export default {
             this.skills = this.skills.filter((item)=> {
                 return skill !== item
             })
+        },
+        handleSubmit(e){
+            console.log('form submitted')
         }
     }
 }
